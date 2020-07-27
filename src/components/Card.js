@@ -4,10 +4,10 @@ import Front from './Front';
 import Back from './Back';
 
 function Card() {
-  const [front, setFlip] = useState(true);
+  const [front, setFront] = useState(true);
 
   return (
-    <div className="Card" onClick={() => {front ? setFlip(false) : setFlip(true)}}>
+    <div className="Card" onClick={() => {front ? setFront(false) : setFront(true)}}>
         {front ? <Front /> : <Back />}
     </div>
   );
