@@ -1,0 +1,15 @@
+.Card {
+    width: 230px;
+    height: 380px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    padding-right: 5px;
+    z-index: 4;
+    margin-top: 5%;
+    background-color: #f2f2f2;
+    -webkit-box-shadow: 6px 6px 5px 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 6px 6px 5px 2px rgba(0,0,0,0.25);
+    box-shadow: 6px 6px 5px 2px rgba(0,0,0,0.25);
+    display: inline-block;
+}
