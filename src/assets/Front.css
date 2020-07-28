@@ -10,14 +10,14 @@
 .team-banner {
     position: absolute;
     display: block;
-    padding-left: 90px;
+    padding-left: 83px;
     margin-top: -40px;
   }
   
   .team {
     position: absolute;
     display: block;
-    padding: 5px 0 0 105px;
+    padding: 3px 0 0 100px;
     margin: 0;
     color: white;
     font-size: 1.3em;
