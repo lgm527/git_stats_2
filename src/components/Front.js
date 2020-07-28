@@ -6,7 +6,7 @@ function Front(props) {
 const { login, avatar_url } = props.user;
   return (
     <div className="Front">
-        <img src={avatar_url} style={{width: '200px', height: '200px'}} alt='user avatar' />
+        <img className='avatar' src={avatar_url} style={{width: '200px', height: '200px'}} alt='user avatar' />
         <p className="team">Octocats</p>
 
     <svg className="team-banner" width="37.157894mm" height="22.345482mm" viewbox="0 0 131.66183 79.176903" id="teambanner">

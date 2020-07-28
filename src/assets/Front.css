@@ -1,15 +1,26 @@
+.avatar {
+    margin-top: 15px;
+    border: 1px solid #8A8A8A;
+    box-shadow: 0px 0px 0px 4px #BBBBBB, 0px 0px 0px 5px #8A8A8A;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+
 .team-banner {
     position: absolute;
     display: block;
+    padding-left: 90px;
+    margin-top: -40px;
   }
   
   .team {
     position: absolute;
     display: block;
+    padding-left: 100px;
     margin: 0;
-    padding: 0;
     color: white;
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: bold;
     text-shadow: -1px -1px 0 #666, 1px -1px 0 #666, -1px 1px 0 #666, 1px 1px 0 #666;
     transform: rotate(-12deg);
