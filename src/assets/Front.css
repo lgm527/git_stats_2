@@ -1,0 +1,18 @@
+.team-banner {
+    position: absolute;
+    display: block;
+  }
+  
+  .team {
+    position: absolute;
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #666, 1px -1px 0 #666, -1px 1px 0 #666, 1px 1px 0 #666;
+    transform: rotate(-12deg);
+    text-transform: uppercase;
+    z-index: 1;
+  }
