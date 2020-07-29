@@ -2,7 +2,6 @@ import React from 'react';
 import '../assets/Front.css';
 
 function Front(props) {
-    console.log(props.user);
     const { login, avatar_url } = props.user;
       return (
         <div className="Front">
