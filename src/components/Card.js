@@ -40,7 +40,7 @@ function Card() {
       return <div>Loading...</div>
   } else {
     return (
-        <div className="Card" onClick={() => {front ? setFront(false) : setFront(true)}}>
+        <div className='Card' onClick={() => {front ? setFront(false) : setFront(true)}}>
             {front ? <Front user={user} /> : <Back user={user}/>}
         </div>
       );

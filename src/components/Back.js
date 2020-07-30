@@ -1,4 +1,5 @@
 import React from 'react';
+import '../assets/Back.css';
 
 function Back(props) {
     console.log(props.user);
