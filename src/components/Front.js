@@ -5,6 +5,7 @@ function Front(props) {
     const { login, avatar_url } = props.user;
       return (
         <div className="Front">
+            <p className='user'>@{login}</p>
             <img className='avatar' src={avatar_url} style={{width: '200px', height: '200px'}} alt='user avatar' />
             
             <p className="team">Octocats</p>
