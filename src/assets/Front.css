@@ -1,6 +1,11 @@
+.dev {
+  font-weight: bold;
+  font-style: italic;
+}
+
 .user {
   font-family: 'Zeyada', cursive;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .avatar {
