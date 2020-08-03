@@ -1,6 +1,10 @@
 .dev {
+  color: white;
+  font-size: 1.3em;
   font-weight: bold;
   font-style: italic;
+  text-shadow: -1px -1px 0 #666, 1px -1px 0 #666, -1px 1px 0 #666, 1px 1px 0 #666;
+  text-transform: uppercase;
 }
 
 .user {
