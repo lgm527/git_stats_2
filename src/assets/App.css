@@ -3,5 +3,8 @@
 }
 
 form {
-  margin: 10px;
+  position: fixed;
+  display: inline-block;
+  top: 10%;
+  left: 10%;
 }
