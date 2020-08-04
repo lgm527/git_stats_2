@@ -8,9 +8,11 @@
   text-transform: uppercase;
 }
 
-.user {
+.username {
   font-family: 'Zeyada', cursive;
   font-size: 25px;
+  font-style: italic;
+  margin: 20px 0px;
 }
 
 .avatar {

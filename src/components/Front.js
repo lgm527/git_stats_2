@@ -6,7 +6,7 @@ function Front(props) {
       return (
         <div className="Front">
             <p className='dev'>DEVELOPER</p>
-            <p className='user'>@{login}</p>
+            <p className='username'>@{login}</p>
             <img className='avatar' src={avatar_url} style={{width: '200px', height: '200px'}} alt='user avatar' />
             
             <p className="team">Octocats</p>
