@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-      
+      <h1>Git Stats</h1>
       <form>
             <label htmlFor='user'>User: </label>
             <input 
@@ -52,8 +52,8 @@ function App() {
             />
             <input type='button' value='Swing' onClick={fetchUser} />
       </form>
-      
-      {isLoaded ? <Card user={user} /> : null }
+      <h3>{ isLoaded ? `User: ${user.login}` : null }</h3>
+      { isLoaded ? <Card user={user} /> : null }
     </div>
   );
 }
