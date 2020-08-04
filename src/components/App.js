@@ -22,9 +22,7 @@ function App() {
         method: 'GET',
         headers: {
           "Content-Type": "application/json",
-          "Accept": "application/vnd.github.v3+json",
-          "User-Agent": "lgm527",
-          "Authorization": "token " + process.env.REACT_APP_GH_TOKEN,
+          "Accept": "application/vnd.github.v3+json"
         }
       })
       .then(res => res.json())
