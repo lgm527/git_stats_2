@@ -3,15 +3,12 @@ import '../assets/Card.css';
 import Front from './Front';
 import Back from './Back';
 
-function Card() {
+function Card(props) {
   // flip card view on click
   const [front, setFront] = useState(true);
     return (
         <div className='Card' onClick={() => {front ? setFront(false) : setFront(true)}}>
-            {/* {front ? <Front user={user} /> : <Back user={user}/>} */}
-
-            {front ? <Front  /> : <Back />}
-
+            {front ? <Front user={props.user} /> : <Back user={props.user}/>}
         </div>
       );
 }

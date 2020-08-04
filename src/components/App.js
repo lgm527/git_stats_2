@@ -10,7 +10,6 @@ function App() {
     // controlled form
     const handleUsernameChange = (e) => setUsername(e.target.value);
 
-
     // fetch loading status
     const [isLoaded, setIsLoaded] = useState(false);
     // fetch catch errors
@@ -32,7 +31,6 @@ function App() {
       .then((user) => {
           setIsLoaded(true);
           setUser(user);
-          console.log(user);
       })
       .catch(error => {
           setIsLoaded(true);
@@ -49,13 +47,14 @@ function App() {
               type='text'
               name='username'
               id='username'
+              autoComplete='off'
               value={username}
               onChange={handleUsernameChange}
             />
             <input type='button' value='Swing' onClick={fetchUser} />
       </form>
       
-      {/* <Card /> */}
+      {isLoaded ? <Card user={user} /> : null }
     </div>
   );
 }
