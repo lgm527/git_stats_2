@@ -29,6 +29,7 @@ function App() {
       .then((user) => {
           setIsLoaded(true);
           setUser(user);
+          setUsername('');
       })
       .catch(error => {
           setIsLoaded(true);
