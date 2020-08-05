@@ -37,6 +37,13 @@ function App() {
       })
     }
 
+    const clearUser = () => {
+      setUsername('');
+      setIsLoaded(false);
+      setError(null);
+      setUser([]);
+    }
+
   return (
     <div className="App">
       <h1>Git Stats { isLoaded ? `... ${user.login}` : null } </h1>
@@ -53,7 +60,7 @@ function App() {
             />
             <input type='button' value='Swing' onClick={fetchUser} />
       </form>
-      <button>clear user</button>
+      <button onClick={clearUser} >clear</button>
       { isLoaded ? <Card user={user} /> : null }
     </div>
   );
