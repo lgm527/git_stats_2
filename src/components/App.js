@@ -40,6 +40,7 @@ function App() {
   return (
     <div className="App">
       <h1>Git Stats { isLoaded ? `... ${user.login}` : null } </h1>
+      <p>Please type in a GitHub username and the statistics will appear below</p>
       <form>
             <label htmlFor='user'>User: </label>
             <input 
@@ -52,6 +53,7 @@ function App() {
             />
             <input type='button' value='Swing' onClick={fetchUser} />
       </form>
+      <button>clear user</button>
       { isLoaded ? <Card user={user} /> : null }
     </div>
   );
