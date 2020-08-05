@@ -2,6 +2,8 @@
 
 Baseball card but for a developer 😅
 
+Instructions: type in your GitHub username and your github statistics will appear on a baseball card 😇
+
 ## 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
