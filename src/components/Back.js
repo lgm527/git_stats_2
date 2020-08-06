@@ -12,13 +12,15 @@ function Back(props) {
       return days;
     }
 
+    console.log(props.user);
+
     return (
       <div className="Back">
           <h6>{name}</h6>
           <a href={html_url}>GitHub</a>
           <p>{bio}</p>
-          <a href={blog}>Blog</a>
-          <p>Coding in <i>{location}</i></p>
+          { blog ? <a href={blog}>Blog</a> : null }
+          { location ? <p>Coding in <i>{location}</i></p> : null }
           <p>Repos ............................ {public_repos}</p>
           <p>Gists ................................. {public_gists}</p>
           <p>Days .............................. {dayCount()}</p>
