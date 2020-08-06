@@ -25,16 +25,22 @@ function App() {
           "Accept": "application/vnd.github.v3+json"
         }
       })
-      .then(res => res.json())
+      .then(res => {
+        if(!res.ok) {
+          setIsLoaded(true);
+          setError(res.statusText);
+        }
+        return res.json()
+      })
       .then((user) => {
           setIsLoaded(true);
           setUser(user);
           setUsername('');
       })
-      .catch(error => {
-          setIsLoaded(true);
-          setError(error);
-      })
+      // .catch(error => {
+      //   setIsLoaded(true);
+      //   setError(error);
+      // })
     }
 
     const clearUser = () => {
@@ -61,7 +67,13 @@ function App() {
             <input type='button' value='Swing' onClick={fetchUser} />
       </form>
       <button onClick={clearUser} >clear</button>
-      { isLoaded ? <Card user={user} /> : null }
+      { isLoaded && error === null ? <Card user={user} /> : null }
+      { error !== null ?
+       <React.Fragment>
+         <p>{error}</p>
+       </React.Fragment>
+       :
+       null }
     </div>
   );
 }
