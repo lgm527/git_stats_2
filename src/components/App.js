@@ -56,8 +56,8 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Git Stats { isLoaded ? `... ${user.login}` : null } </h2>
-      <p>Please type in a GitHub username and the statistics will appear below</p>
+      <h2 id='title'>Git Stats { isLoaded ? `... ${user.login}` : null } </h2>
+      <p id='instructions'>Please type in a GitHub username and the statistics will appear below</p>
       <Field>
           <Control>
           <Input 
@@ -70,9 +70,9 @@ function App() {
               onChange={handleUsernameChange}
             />
           </Control>
-            <Button onClick={fetchUser}>Swing</Button>
+            <Button onClick={fetchUser} color='dark'>Swing</Button>
+            <Button onClick={clearUser} color='warning' >clear</Button>
       </Field>
-      <Button onClick={clearUser} >clear</Button>
       { isLoaded && error === null ? <Card user={user} /> : null }
       { error !== null ?
        <React.Fragment>

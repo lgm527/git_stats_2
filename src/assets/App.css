@@ -5,12 +5,22 @@
   transform: translate(-50%);
 }
 
-h2 {
+#title {
   font-family: 'Playball', cursive;
   font-weight: bold;
+  font-size: larger;
   background: #eeeeee;
   color: #c50322;
   border: 3px dashed #c50322;
   box-shadow: 0 0 0 5px #dddddd;
   padding: 5px;
+  margin: 5px;
+}
+
+#instructions {
+  margin: 5px;
+}
+
+.input, .button {
+  margin: 5px;
 }
