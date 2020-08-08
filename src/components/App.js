@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../assets/App.css';
 import Card from './Card';
+import 'react-bulma-components/dist/react-bulma-components.min.css';
 import { Form, Button } from 'react-bulma-components';
 
 function App() {
@@ -56,7 +57,7 @@ function App() {
   return (
     <div className="App">
       <h2>Git Stats { isLoaded ? `... ${user.login}` : null } </h2>
-      <p className='subtitle'>Please type in a GitHub username and the statistics will appear below</p>
+      <p>Please type in a GitHub username and the statistics will appear below</p>
       <Field>
           <Control>
           <Input 
