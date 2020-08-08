@@ -1,13 +1,11 @@
 .App {
   text-align: center;
   position: fixed;
-  /* display: inline; */
-  top: 2%;
   left: 50%;
   transform: translate(-50%);
 }
 
-h1 {
+h2 {
   font-family: 'Playball', cursive;
   font-weight: bold;
   background: #eeeeee;
@@ -17,6 +15,6 @@ h1 {
   padding: 5px;
 }
 
-button, form {
+input, form, button {
   padding: 5px;
 }

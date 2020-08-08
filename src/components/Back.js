@@ -12,8 +12,6 @@ function Back(props) {
       return days;
     }
 
-    console.log(props.user);
-
     return (
       <div className="Back">
           <h6>{name}</h6>

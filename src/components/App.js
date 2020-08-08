@@ -52,14 +52,14 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Git Stats { isLoaded ? `... ${user.login}` : null } </h1>
+      <h2>Git Stats { isLoaded ? `... ${user.login}` : null } </h2>
       <p>Please type in a GitHub username and the statistics will appear below</p>
       <form>
-            <label htmlFor='user'>User: </label>
             <input 
               type='text'
               name='username'
               id='username'
+              placeholder='username'
               autoComplete='off'
               value={username}
               onChange={handleUsernameChange}
