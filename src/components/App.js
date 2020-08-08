@@ -3,6 +3,7 @@ import '../assets/App.css';
 import Card from './Card';
 import 'react-bulma-components/dist/react-bulma-components.min.css';
 import { Form, Button } from 'react-bulma-components';
+import laptop from '../Laptop/Laptop-01.svg';
 
 function App() {
 
@@ -77,6 +78,7 @@ function App() {
       { error !== null ?
        <React.Fragment>
          <p>{error}</p>
+         <img src={laptop} alt='error' />
        </React.Fragment>
        :
        null }
