@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../assets/App.css';
 import Card from './Card';
+import { Form, Button } from 'react-bulma-components';
 
 function App() {
 
@@ -50,12 +51,15 @@ function App() {
       setUser([]);
     }
 
+  const { Input, Field, Control } = Form;
+
   return (
     <div className="App">
       <h2>Git Stats { isLoaded ? `... ${user.login}` : null } </h2>
-      <p>Please type in a GitHub username and the statistics will appear below</p>
-      <form>
-            <input 
+      <p className='subtitle'>Please type in a GitHub username and the statistics will appear below</p>
+      <Field>
+          <Control>
+          <Input 
               type='text'
               name='username'
               id='username'
@@ -64,9 +68,10 @@ function App() {
               value={username}
               onChange={handleUsernameChange}
             />
-            <input type='button' value='Swing' onClick={fetchUser} />
-      </form>
-      <button onClick={clearUser} >clear</button>
+          </Control>
+            <Button onClick={fetchUser}>Swing</Button>
+      </Field>
+      <Button onClick={clearUser} >clear</Button>
       { isLoaded && error === null ? <Card user={user} /> : null }
       { error !== null ?
        <React.Fragment>
