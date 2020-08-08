@@ -11,7 +11,7 @@ function Front(props) {
             
             <p className="team">Octocats</p>
 
-            <svg className="team-banner" width="37.157894mm" height="22.345482mm" viewBox="0 0 131.66183 79.176903" id="teambanner">
+            <svg className="team-banner" width="57.45mm" height="25.2mm" viewBox="0 0 131.66183 79.176903" id="teambanner">
             <g transform="translate(20.245031,15.912448)" style={{"display":"inline"}}>
             <g id="g4219">
             <path id="path3352-3" d="m -20.0734,32.05221 8,17 6.00241,0.92417 -1.50241,13.07583 30.09262,-9.44365 41.06468,-9.69713 c 0,0 17.45114,-4.58631 26.85574,-7.11134 16.47986,-4.42466 20.25842,-13.83519 20.38342,-18.21019 1.0625,-2.71875 -0.11677,-30.783301 -0.11677,-30.783301 -0.003,-0.726468 0.0834,-2.6126 -1.41356,-3.46427 l -0.0715,3.2794 c -1.72517,7.64159 -8.32748,14.570481 -22.29466,21.680481 -8.10983,4.12832 -107,22.75 -107,22.75 z" style={{"fill":"#000000","fillOpacity":"1","fillRule":"evenodd","stroke":"#000000","strokeWidth":"0.30000001","strokeLinecap":"butt","strokeLinejoin":"miter","strokeMiterlimit":"4","strokeDasharray":"none","strokeOpacity":"1"}}></path>
