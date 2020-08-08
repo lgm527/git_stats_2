@@ -57,7 +57,8 @@ function App() {
 
   return (
     <div className="App">
-      <h2 id='title'>Git Stats { isLoaded ? `... ${user.login}` : null } </h2>
+      <h2 id='title'>Git Stats </h2>
+      {/* <h2 id='title'>Git Stats { isLoaded ? `... ${user.login}` : null } </h2> */}
       <p id='instructions'>Please type in a GitHub username and the statistics will appear below</p>
       <Field>
           <Control>
@@ -77,7 +78,7 @@ function App() {
       { isLoaded && error === null ? <Card user={user} /> : null }
       { error !== null ?
        <React.Fragment>
-         <p>{error}</p>
+         <p>Whoops! {error}</p>
          <img src={laptop} alt='error' />
        </React.Fragment>
        :
