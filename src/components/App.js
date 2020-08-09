@@ -73,8 +73,8 @@ function App() {
       { isLoaded && error === null ? <Card user={user} /> : null }
       { error !== null ?
        <React.Fragment>
-         <Notification color='danger'>Whoops! {error}</Notification>
          <Error />
+         <Notification color='danger'>Whoops! {error}</Notification>
        </React.Fragment>
        :
        null }
