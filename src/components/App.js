@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import '../assets/App.css';
 import Card from './Card';
+import Error from './Error';
 import 'react-bulma-components/dist/react-bulma-components.min.css';
 import { Form, Button } from 'react-bulma-components';
-import laptop from '../Laptop/Laptop-01.svg';
 
 function App() {
 
@@ -40,10 +40,6 @@ function App() {
           setUser(user);
           setUsername('');
       })
-      // .catch(error => {
-      //   setIsLoaded(true);
-      //   setError(error);
-      // })
     }
 
     const clearUser = () => {
@@ -57,9 +53,8 @@ function App() {
 
   return (
     <div className="App">
-      <h2 id='title'>Git Stats </h2>
-      {/* <h2 id='title'>Git Stats { isLoaded ? `... ${user.login}` : null } </h2> */}
-      <p id='instructions'>Please type in a GitHub username and the statistics will appear below</p>
+      <h2 id='title' className='title'>Git Stats </h2>
+      <p id='instructions' className='subtitle'>Please type in a GitHub username and the statistics will appear below</p>
       <Field>
           <Control>
           <Input 
@@ -79,7 +74,7 @@ function App() {
       { error !== null ?
        <React.Fragment>
          <p>Whoops! {error}</p>
-         <img src={laptop} alt='error' />
+         <Error />
        </React.Fragment>
        :
        null }

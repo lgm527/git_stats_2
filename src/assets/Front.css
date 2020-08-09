@@ -26,20 +26,21 @@
 .team-banner {
     position: absolute;
     display: block;
-    padding-left: 83px;
-    margin-top: -40px;
+    padding-left: 68px;
+    margin-top: -90px;
+    margin-left: 7px;
   }
   
   .team {
     position: absolute;
     display: block;
-    padding: 4px 0 0 98px;
+    padding: 6px 0 0 98px;
     margin: 0;
     color: white;
     font-size: 21px;
     font-weight: bold;
     text-shadow: -1px -1px 0 #666, 1px -1px 0 #666, -1px 1px 0 #666, 1px 1px 0 #666;
-    transform: rotate(-12deg);
+    transform: rotate(-13deg);
     text-transform: uppercase;
     z-index: 1;
   }
