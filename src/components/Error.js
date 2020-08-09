@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { useLottie } from 'lottie-react';
 import sadLaptop from '../Laptop/laptop.json';
 import '../assets/Error.css';

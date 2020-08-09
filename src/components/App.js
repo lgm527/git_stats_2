@@ -3,7 +3,7 @@ import '../assets/App.css';
 import Card from './Card';
 import Error from './Error';
 import 'react-bulma-components/dist/react-bulma-components.min.css';
-import { Form, Button } from 'react-bulma-components';
+import { Form, Button, Notification } from 'react-bulma-components';
 
 function App() {
 
@@ -73,7 +73,7 @@ function App() {
       { isLoaded && error === null ? <Card user={user} /> : null }
       { error !== null ?
        <React.Fragment>
-         <p>Whoops! {error}</p>
+         <Notification color='danger'>Whoops! {error}</Notification>
          <Error />
        </React.Fragment>
        :
