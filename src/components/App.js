@@ -67,14 +67,14 @@ function App() {
               onChange={handleUsernameChange}
             />
           </Control>
-            <Button onClick={fetchUser} color='dark'>Swing</Button>
-            <Button onClick={clearUser} color='warning' >clear</Button>
+            <Button onClick={fetchUser} color='primary'>Swing</Button>
+            <Button onClick={clearUser} color='info' >clear</Button>
       </Field>
       { isLoaded && error === null ? <Card user={user} /> : null }
       { error !== null ?
        <React.Fragment>
          <Error />
-         <Notification color='danger'>Whoops! {error}</Notification>
+         <Notification color='danger'>Whoops! {error}... Try again?</Notification>
        </React.Fragment>
        :
        null }
