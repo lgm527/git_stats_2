@@ -3,7 +3,7 @@ import '../assets/App.css';
 import Card from './Card';
 import Error from './Error';
 import 'react-bulma-components/dist/react-bulma-components.min.css';
-import { Form, Button, Notification } from 'react-bulma-components';
+import { Form, Button, Notification, Loader } from 'react-bulma-components';
 
 function App() {
 
@@ -14,13 +14,14 @@ function App() {
     const handleUsernameChange = (e) => setUsername(e.target.value);
 
     // fetch loading status
-    const [isLoaded, setIsLoaded] = useState(false);
+    const [isLoading, setLoading] = useState(false);
     // fetch catch errors
     const [error, setError] = useState(null);
     // save fetched data
     const [user, setUser] = useState([]);
 
     const fetchUser = () => {
+      setLoading(true);
       fetch(`https://api.github.com/users/${username}`, {
         method: 'GET',
         headers: {
@@ -29,14 +30,13 @@ function App() {
         }
       })
       .then(res => {
+        setLoading(false);
         if(!res.ok) {
-          setIsLoaded(true);
           setError(res.statusText);
         }
         return res.json()
       })
       .then((user) => {
-          setIsLoaded(true);
           setUser(user);
           setUsername('');
       })
@@ -44,7 +44,6 @@ function App() {
 
     const clearUser = () => {
       setUsername('');
-      setIsLoaded(false);
       setError(null);
       setUser([]);
     }
@@ -70,7 +69,11 @@ function App() {
             <Button onClick={fetchUser} color='primary'>Swing</Button>
             <Button onClick={clearUser} color='info' >clear</Button>
       </Field>
-      { isLoaded && error === null ? <Card user={user} /> : null }
+      { user.login !== undefined && error === null ? 
+      <Card user={user} />
+      : isLoading ? 
+      <Loader style={{ width: 200, height: 200, border: '4px solid darkgray', borderTopColor: 'transparent', borderRightColor: 'transparent', position: 'fixed', left: '25%' }}/> 
+      : null }
       { error !== null ?
        <React.Fragment>
          <Error />
