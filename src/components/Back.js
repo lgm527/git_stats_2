@@ -12,16 +12,34 @@ function Back(props) {
       return days;
     }
 
+
     return (
       <div className="Back">
-          <h6>{name}</h6>
+          <h6 className='subtitle'>{name}</h6>
+          <h6 className='subtitle'>{bio}</h6>
           <a href={html_url}>GitHub</a>
-          <p>{bio}</p>
+          { blog ? ' | ' : null }
           { blog ? <a href={blog}>Blog</a> : null }
           { location ? <p>Coding in <i>{location}</i></p> : null }
-          <p>Repos ............................ {public_repos}</p>
-          <p>Gists ................................. {public_gists}</p>
-          <p>Days .............................. {dayCount()}</p>
+          <table>
+            <tbody>
+            <tr>
+              <th>REPOS</th>
+              <td>{public_repos}</td>
+            </tr>
+            <tr>
+              <th>GISTS</th>
+              <td>{public_gists}</td>
+            </tr>
+            <tr>
+              <th>DAYS</th>
+              <td>{dayCount()}</td>
+            </tr>
+            </tbody>
+          </table>
+          {/* <p><b className='stats'>REPOS</b> <b className='number'>{public_repos}</b></p>
+          <p><b className='stats'>GISTS</b> <b className='number'>{public_gists}</b></p>
+          <p><b className='stats'>DAYS</b> <b className='number'>{dayCount()}</b></p> */}
       </div>
     );
 }
