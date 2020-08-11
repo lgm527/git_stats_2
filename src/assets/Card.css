@@ -9,6 +9,8 @@
     -webkit-box-shadow: 6px 6px 5px 2px rgba(0,0,0,0.25);
     -moz-box-shadow: 6px 6px 5px 2px rgba(0,0,0,0.25);
     box-shadow: 6px 6px 5px 2px rgba(0,0,0,0.25);
+    transition: 1s;
+    transform-style: preserve-3d;
 }
 
 .Card:hover {
@@ -20,4 +22,8 @@
     -webkit-box-shadow: 12px 12px 5px 2px rgba(0,0,0,0.25);
     -moz-box-shadow: 12px 12px 5px 2px rgba(0,0,0,0.25);
     box-shadow: 12px 12px 5px 2px rgba(0,0,0,0.25);
+}
+
+.flipped {
+    transform: translate(-110px, 10px) rotateY(180deg);
 }

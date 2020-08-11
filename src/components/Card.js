@@ -15,7 +15,7 @@ function Card(props) {
 
     return (
         <div 
-        className='Card' 
+        className={ front ? 'Card' : 'Card flipped'}
         onClick={() => {front ? setFront(false) : setFront(true)}} 
         tabIndex='0'
         onKeyDown={(event) => handleKeyDown(event)}

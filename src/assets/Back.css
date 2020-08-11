@@ -1,19 +1,26 @@
 .Back {
     margin: 5px;
+    transform: rotateY(180deg);
 }
 
 .Back > p {
     margin-top: 5px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .Back > a {
     margin-top: 5px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 table {
     width: 50%;
     margin-top: 30px;
     margin-left: 60px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 th {
