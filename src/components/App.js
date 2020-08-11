@@ -21,6 +21,7 @@ function App() {
     const [user, setUser] = useState([]);
 
     const fetchUser = () => {
+      setError(null);
       setLoading(true);
       fetch(`https://api.github.com/users/${username}`, {
         method: 'GET',
@@ -33,6 +34,8 @@ function App() {
         setLoading(false);
         if(!res.ok) {
           setError(res.statusText);
+          setUser([]);
+          setUsername('');
         }
         return res.json()
       })
@@ -70,7 +73,10 @@ function App() {
             <Button onClick={clearUser} color='info' >clear</Button>
       </Field>
       { user.login !== undefined && error === null ? 
-      <Card user={user} />
+      <React.Fragment>
+        <p>Click to flip</p>
+        <Card user={user} />
+      </React.Fragment>
       : isLoading ? 
       <Loader style={{ width: 200, height: 200, border: '4px solid darkgray', borderTopColor: 'transparent', borderRightColor: 'transparent', position: 'fixed', left: '25%' }}/> 
       : null }
