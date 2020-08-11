@@ -1,3 +1,8 @@
+.Front {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
 .dev {
   color: white;
   margin: 0;
@@ -29,6 +34,8 @@
     padding-left: 68px;
     margin-top: -90px;
     margin-left: 7px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   
   .team {
@@ -43,4 +50,6 @@
     transform: rotate(-13deg);
     text-transform: uppercase;
     z-index: 1;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }

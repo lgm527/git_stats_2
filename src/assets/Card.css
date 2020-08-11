@@ -9,6 +9,7 @@
     -webkit-box-shadow: 6px 6px 5px 2px rgba(0,0,0,0.25);
     -moz-box-shadow: 6px 6px 5px 2px rgba(0,0,0,0.25);
     box-shadow: 6px 6px 5px 2px rgba(0,0,0,0.25);
+    perspective: 900px;
     transition: 1s;
     transform-style: preserve-3d;
 }
