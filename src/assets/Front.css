@@ -53,3 +53,10 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
+
+  .octocat {
+    height: 20px;
+    width: 20px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
