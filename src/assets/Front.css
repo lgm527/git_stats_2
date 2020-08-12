@@ -32,7 +32,7 @@
     position: absolute;
     display: block;
     padding-left: 68px;
-    margin-top: -90px;
+    margin-top: -100px;
     margin-left: 7px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -41,7 +41,7 @@
   .team {
     position: absolute;
     display: block;
-    padding: 6px 0 0 98px;
+    padding-left: 100px;
     margin: 0;
     color: white;
     font-size: 21px;
