@@ -17,9 +17,9 @@ function Back(props) {
       <div className="Back">
           <h6 className='subtitle' id='name'>{name}</h6>
           <h6 className='subtitle' id='bio'>{bio}</h6>
-          <a href={html_url}>GITHUB</a>
+          <a href={html_url} target='_blank' rel='noopener noreferrer'>GITHUB</a>
           { blog ? ' | ' : null }
-          { blog ? <a href={blog}>BLOG</a> : null }
+          { blog ? <a href={blog} target='_blank' rel='noopener noreferrer'>BLOG</a> : null }
           { location ? <p>CODING IN <i>{location}</i></p> : null }
           <table>
             <tbody>
