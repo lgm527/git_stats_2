@@ -7,18 +7,31 @@
     margin-top: 5px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    font-family: 'Lato';
 }
 
 .Back > a {
     margin-top: 5px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    font-family: 'Lato';
+    font-weight: bold;
+}
+
+#name {
+    font-family: 'Lato';
+    font-weight: bold;
+}
+
+#bio {
+    font-family: 'Lato';
+    font-size: 18px;
 }
 
 table {
-    width: 50%;
+    width: 100%;
     margin-top: 30px;
-    margin-left: 60px;
+    margin-left: 20px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }

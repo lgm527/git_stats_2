@@ -15,12 +15,12 @@ function Back(props) {
 
     return (
       <div className="Back">
-          <h6 className='subtitle'>{name}</h6>
-          <h6 className='subtitle'>{bio}</h6>
-          <a href={html_url}>GitHub</a>
+          <h6 className='subtitle' id='name'>{name}</h6>
+          <h6 className='subtitle' id='bio'>{bio}</h6>
+          <a href={html_url}>GITHUB</a>
           { blog ? ' | ' : null }
-          { blog ? <a href={blog}>Blog</a> : null }
-          { location ? <p>Coding in <i>{location}</i></p> : null }
+          { blog ? <a href={blog}>BLOG</a> : null }
+          { location ? <p>CODING IN <i>{location}</i></p> : null }
           <table>
             <tbody>
             <tr>
