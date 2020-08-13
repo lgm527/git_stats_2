@@ -1,6 +1,10 @@
 .Back {
-    margin: 25px 5px;
+    height: 330px;
+    margin: 25px 10px;
     transform: rotateY(180deg);
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
 }
 
 .Back > p {
