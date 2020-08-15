@@ -4,6 +4,7 @@
   width: 380px;
   left: 50%;
   transform: translate(-50%);
+  height: 100%;
 }
 
 #title {
@@ -17,4 +18,26 @@
 
 #username {
   width: 370px;
+}
+
+.foot {
+  bottom: 0;
+  z-index: 2;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  /* background-color: rgba(0, 0, 0, .1); */
+}
+
+.foot > span {
+  padding-right: 3px;
+}
+
+.foot > a {
+  color: black;
+}
+
+.foot > a:hover {
+  text-transform: uppercase;
+  font-weight: bold;
 }
