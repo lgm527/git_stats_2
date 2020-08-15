@@ -1,8 +1,16 @@
 # Git_Stats ⚾️🧢
 
+https://git-stats-and-octocats.netlify.app/
+
+## Why
+
 Baseball card but for a developer 😅
 
 Instructions: type in your GitHub username and your github statistics will appear on a baseball card 😇
+
+## How
+
+React (UI), Bulma (styling), Lottie (animation), Cypress (testing), Netlify (deployment)
 
 ## 
 
