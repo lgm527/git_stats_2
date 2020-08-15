@@ -12,6 +12,8 @@ Instructions: type in your GitHub username and your statistics will appear as a 
 
 React (UI), Bulma (styling), Lottie (animation), Cypress (testing), Netlify (deployment)
 
+##
+
 ### Boilerplate for local replication
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
