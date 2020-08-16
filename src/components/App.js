@@ -68,8 +68,8 @@ function App() {
               autoComplete='off'
               value={username}
               onChange={handleUsernameChange}
-              type='search'
               aria-label='search'
+              aria-placeholder='username'
             />
           </Control>
             <Button onClick={fetchUser} color='primary' id='submit' aria-label='submit' type='submit'>Swing</Button>
