@@ -68,9 +68,11 @@ function App() {
               autoComplete='off'
               value={username}
               onChange={handleUsernameChange}
+              type='search'
+              aria-label='search'
             />
           </Control>
-            <Button onClick={fetchUser} color='primary' id='submit'>Swing</Button>
+            <Button onClick={fetchUser} color='primary' id='submit' type='submit'>Swing</Button>
             <Button onClick={clearUser} color='info' id='clear'>clear</Button>
       </Field>
       { user.login !== undefined && error === null ? 
