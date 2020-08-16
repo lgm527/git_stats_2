@@ -57,6 +57,7 @@ function App() {
     <div className="App">
       <h2 id='title' className='title'>Git Stats </h2>
       <p id='instructions' className='subtitle'>Please type in a GitHub username and the statistics will appear below</p>
+
       <Field>
           <Control>
           <Input 
@@ -69,8 +70,8 @@ function App() {
               onChange={handleUsernameChange}
             />
           </Control>
-            <Button onClick={fetchUser} color='primary'>Swing</Button>
-            <Button onClick={clearUser} color='info' >clear</Button>
+            <Button onClick={fetchUser} color='primary' id='submit'>Swing</Button>
+            <Button onClick={clearUser} color='info' id='clear'>clear</Button>
       </Field>
       { user.login !== undefined && error === null ? 
       <React.Fragment>
