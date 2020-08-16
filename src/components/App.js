@@ -72,8 +72,8 @@ function App() {
               aria-label='search'
             />
           </Control>
-            <Button onClick={fetchUser} color='primary' id='submit' type='submit'>Swing</Button>
-            <Button onClick={clearUser} color='info' id='clear'>clear</Button>
+            <Button onClick={fetchUser} color='primary' id='submit' aria-label='submit' type='submit'>Swing</Button>
+            <Button onClick={clearUser} color='info' id='clear' aria-label='clear'>clear</Button>
       </Field>
       { user.login !== undefined && error === null ? 
       <React.Fragment>
