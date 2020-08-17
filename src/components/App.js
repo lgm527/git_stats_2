@@ -58,7 +58,7 @@ function App() {
       <h2 id='title' className='title'>Git Stats </h2>
       <p id='instructions' className='subtitle'>Please type in a GitHub username and the statistics will appear below</p>
 
-      <Field>
+      <Field id='form'>
           <Control>
           <Input 
               type='text'

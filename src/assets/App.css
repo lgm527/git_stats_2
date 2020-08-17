@@ -24,6 +24,10 @@
   font-weight: bold;
 }
 
+#form {
+  margin: 0;
+}
+
 .foot {
   bottom: 0;
   z-index: 2;
