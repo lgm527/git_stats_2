@@ -3,5 +3,5 @@ svg {
     width: 200px;
     position: fixed;
     left: 50%;
-    transform: translate(-50%) !important;
+    transform: translate(-50%, -20%) !important;
 }

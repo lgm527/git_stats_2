@@ -18,10 +18,12 @@
 
 #username {
   width: 370px;
+  z-index: 2;
 }
 
 #submit, #clear {
   font-weight: bold;
+  z-index: 2;
 }
 
 #form {

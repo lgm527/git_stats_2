@@ -1,6 +1,6 @@
 .Card {
     margin-left: 50%;
-    transform: translate(-110px, 10px);
+    transform: translate(-110px);
     width: 230px;
     height: 380px;
     border: 1px solid black;
@@ -26,5 +26,5 @@
 }
 
 .flipped {
-    transform: translate(-110px, 10px) rotateY(180deg);
+    transform: translate(-110px) rotateY(180deg);
 }
