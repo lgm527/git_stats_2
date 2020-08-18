@@ -1,23 +1,25 @@
 .Back {
     height: 330px;
     margin: 25px 10px;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) translateZ(.1px);
     border-radius: 10px;
     background-color: white;
     padding: 10px;
+    z-index: 2;
+}
+
+.Back > * {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .Back > p {
     margin-top: 5px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
     font-family: 'Lato';
 }
 
 .Back > a {
     margin-top: 5px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
     font-family: 'Lato';
     font-weight: bold;
 }
@@ -36,8 +38,6 @@ table {
     width: 100%;
     margin-top: 30px;
     margin-left: 20px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
 }
 
 th {
