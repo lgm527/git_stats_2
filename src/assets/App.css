@@ -22,6 +22,7 @@
 }
 
 #submit, #clear {
+  color: black;
   font-weight: bold;
   z-index: 2;
 }

@@ -72,7 +72,7 @@ function App() {
               aria-placeholder='username'
             />
           </Control>
-            <Button onClick={fetchUser} color='primary' id='submit' aria-label='submit' type='submit'>Swing</Button>
+            <Button onClick={fetchUser} color='primary' id='submit' aria-label='submit' type='submit'>swing!</Button>
             <Button onClick={clearUser} color='info' id='clear' aria-label='clear'>clear</Button>
       </Field>
       { user.login !== undefined && error === null ? 
