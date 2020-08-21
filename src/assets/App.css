@@ -44,10 +44,11 @@
 }
 
 .foot > a {
+  padding: 5px;
   color: black;
 }
 
 .foot > a:hover {
-  text-transform: uppercase;
+  padding: 3px;
   font-weight: bold;
 }
