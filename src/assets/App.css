@@ -39,16 +39,13 @@
   width: 100%;
 }
 
-.foot > span {
-  padding-right: 3px;
-}
 
 .foot > a {
-  padding: 5px;
   color: black;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
 }
 
 .foot > a:hover {
-  padding: 3px;
-  font-weight: bold;
+  background-color: #00c4a7;
 }
